@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberian Digital ID Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Liberian Digital ID Generator</h1>
+
+    <!-- Form to collect user info -->
+    <form id="idForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="nin">National Identification Number (NIN):</label>
+        <input type="text" id="nin" required>
+
+        <label for="photo">Photo URL:</label>
+        <input type="text" id="photo" placeholder="Paste image URL" required>
+
+        <button type="submit">Generate ID Card</button>
+        <button type="button" id="clearBtn">Clear Data</button>
+    </form>
+
+    <!-- Area to display ID cards -->
+    <div id="idCards">
+        <div id="frontCard" class="card">
+            <h2>Front Side</h2>
+            <img id="frontPhoto" src="" alt="User Photo">
+            <p id="frontName"></p>
+            <p id="frontDOB"></p>
+            <p id="frontSex"></p>
+            <p id="frontNIN"></p>
+        </div>
+
+        <div id="backCard" class="card">
+            <h2>Back Side</h2>
+            <p id="backNIN"></p>
+            <canvas id="qrCode"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</body>
+</html>
