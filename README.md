@@ -1,3 +1,4 @@
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/WyOmKhpw)
 # 🇱🇷 Liberia National ID Generator – Project Tasks
 
@@ -46,3 +47,7 @@ The application should also **store user information using Local Storage**.
 * [ ] Add form validation to ensure all fields are correctly filled.
 * [ ] Make the app responsive for smaller screens.
 * [ ] Include a “Clear Data” button to remove saved information from Local Storage.
+=======
+# id-generator-project
+Just html css and javascript with local storage access
+
